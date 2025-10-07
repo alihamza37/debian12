@@ -142,3 +142,56 @@ Canlı TV ve DVR desteği:
 TV tuner kartı varsa canlı TV izleyebilir ve kayıt yapabilirsin.
 
 Vtigercrm 
+
+Vtigercrm kurarken kullandığım kodlar
+
+  apt install apache2
+  
+  systemctl enable --now apache2
+  
+  ufw allow Apache
+  
+  apt install php php-imap php-curl php-xml php-mysql php-mbstring
+  
+  onfigure PHP for Vtiger
+  
+  Open the /etc/php/7.4/apache2/php.ini configuration file and make the following adjustments;
+  
+  sudo apt update && sudo apt upgrade -y
+  
+  sudo apt install apache2 mysql-server php php-mysql php-xml php-curl php-gd php-imap php-mbstring php-zip php-soap php-bcmath php-cli php-common php-json php-opcache php-readline unzip wget -y
+  
+  sudo mysql -u root -p
+  
+  sudo sed -i 's/Listen 80/Listen 8080/' /etc/apache2/ports.conf && sudo sed -i 's/<VirtualHost \*:80>/<VirtualHost *:8080>/' /etc/apache2/sites-available/000-default.conf && sudo systemctl restart apache2
+  
+  sudo journalctl -xeu apache2.service
+  
+  sudo systemctl start apache2
+  
+  sudo systemctl start mysql
+  
+  sudo systemctl status apache2
+  
+  sudo systemctl status mysql
+
+  Vtigercrm ne işe yarar
+
+  Vtiger CRM, şirketlerin:
+
+Müşteri bilgilerini yönetmesini,
+
+Satış süreçlerini takip etmesini,
+
+Pazarlama kampanyalarını planlamasını,
+
+Destek taleplerini izlemesini,
+
+Fatura, teklif ve proje yönetimi yapmasını sağlar
+
+
+
+
+
+
+
